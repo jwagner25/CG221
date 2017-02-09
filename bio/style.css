@@ -5,3 +5,9 @@ background-color: lightblue
 img {
   width: 200px;   
 }
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: left;
+}
