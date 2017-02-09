@@ -1,4 +1,10 @@
 body{
-font-family:san serif;;
+font-family:san serif;
 background-color: lightblue
+}
+img {
+  width: 200px;
+}
+h1 {
+  text-align: center;
 }
