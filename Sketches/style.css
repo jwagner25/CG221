@@ -1,0 +1,17 @@
+
+body {
+  font-size: 16px
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+img {
+  max-width: 50%;
+}
+.box {
+    background: #000;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
