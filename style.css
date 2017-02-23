@@ -1,6 +1,6 @@
 body{
 font-family:san serif;;
-background="kinky.jpg"
+background-image: url("kinky.jpg")
 }
 img {
   width: 200px;   
