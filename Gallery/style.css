@@ -17,15 +17,14 @@ body {
   background-color: lightblue
 }
 .container {
-  max-width: 800px;
+  max-width: 88rem;
   margin: auto;
 }
 img {
-  max-width: 50%;
+  max-width: 100%;
 }
-.box {
-    background: #000;
-    width: 300px;
-    height: 300px;
+.gallery-item {
+    width: 13rem;
+    margin: 1rem;
     display: inline-block;
 }
