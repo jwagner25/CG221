@@ -1,5 +1,7 @@
 body {
   font-size: 16px
+  font-family:san serif;
+  background-color: lightblue
 }
 .container {
   max-width: 800px;
