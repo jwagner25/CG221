@@ -23,8 +23,8 @@ body {
 img {
   max-width: 100%;
 }
-.item {
-    circle, 100%
+img {
+    border-radius: 50%;
 }
 .gallery-item {
     width: 13rem;
