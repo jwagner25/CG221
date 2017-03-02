@@ -23,9 +23,6 @@ body {
 img {
   max-width: 100%;
 }
-img {
-    border-radius: 50%;
-}
 .gallery-item {
     width: 13rem;
     margin: 1rem;
