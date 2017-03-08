@@ -1,10 +1,12 @@
 body{
 font-family:san serif;;
 background: url(juxtapoz.jpg);
+background-size: 100px 100px;
+background-repeat: no-repeat;
 }
 .element {
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
   animation: pulse 5s infinite;
 }
 
