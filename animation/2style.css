@@ -1,0 +1,10 @@
+@keyframes bounceIn {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+div {
+    width: 300px;
+    height: 600px;
+    background-color: blue;
+    animation-name: bouncing;
+    animation-duration: 4s;
