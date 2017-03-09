@@ -7,7 +7,7 @@ background-size: 85%
 .element {
   width: 50%;
   height: 50%;
-  animation: pulse infinite;
+  animation: pulse 7s infinite;
 }
 
 @keyframes pulse {
