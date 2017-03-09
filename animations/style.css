@@ -1,13 +1,26 @@
 body{
-font-family:san serif;
+font-family:sans-serif;
 background-size: 85%;
-animation: pulse 7s infinite;
-
+animation: pulse 7s;
+background-color: lightblue;
 }
-.element {
-  width: 50%;
-  height: 50%;
-  animation: pulse 7s infinite;
+
+html,
+body {
+  height: 100%;
+}
+img {
+  width: 200px;
+}
+h1 {
+    color: rgb(255,255,255);
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: bounceIn;
+}
+h2 {
+    color: rgb(255,255,255);
+    text-align: left;
 }
 
 @keyframes pulse {
@@ -28,20 +41,54 @@ animation: pulse 7s infinite;
   }
 }
 
-html,
-body {
-  height: 100%;
-}
-img {
-  width: 200px;
-}
-h3 {
-    color: rgb(255,255,255);
-    text-align: left;
-}
-ul {
-  color: rgb(255,255,255);
-  text-align: left;
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.0);
+    }
 }
 
+.element {
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+  margin: 0 auto;
+  background-color: blue;
+  animation-name: stretch;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
 
+@keyframes stretch {
+  0% {
+    transform: scale(.5);
+    background-color: lightgreen;
+    border-radius: 100%;
+  }
+  25% {
+    background-color: darkgreen;
+  }
+  50% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(2);
+    background-color: red;
+  }
+}
