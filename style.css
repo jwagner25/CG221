@@ -1,7 +1,8 @@
 body{
 font-family:san serif;;
 background: url(juxtapoz.jpg);
-background-size: 600px 800px;
+background-size: 100%
+  
 }
 .element {
   width: 50%;
