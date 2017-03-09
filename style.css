@@ -1,13 +1,13 @@
 body{
 font-family:san serif;;
 background: url(juxtapoz.jpg);
-background-size: 100%
+background-size: 85%
   
 }
 .element {
   width: 50%;
   height: 50%;
-  animation: pulse 5s infinite;
+  animation: pulse infinite;
 }
 
 @keyframes pulse {
