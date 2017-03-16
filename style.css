@@ -1,6 +1,6 @@
 body{
 font-family: serif;
-background-color: lightblue;
+background-color: navy;
 background-size: 85%;
 }
 
@@ -29,7 +29,7 @@ h1 {
   100% {
     transform: scale(1.0);
     }
-}
+  
 h2 {
     color: rgb(255,255,255);
     text-align: left;
@@ -37,4 +37,12 @@ h2 {
 h3 {
     color: rgb(255,255,255);
     text-align: left;
+}
+h4 {
+  color: rgb(255,255,255);
+  text-align: left;
+}
+h5 {
+  color: rgb(255,255,255);
+  text-align: left;
 }
