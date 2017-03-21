@@ -3,6 +3,11 @@ font-family:'Baloo Bhaina', cursive;
 background-color: blue;
 background-size: 100%;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 html,
 body {
