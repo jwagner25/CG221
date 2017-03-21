@@ -22,11 +22,6 @@ li a {
 li a:hover {
     background-color: #555;
     color: white;
-    
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 html,
