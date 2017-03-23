@@ -1,18 +1,28 @@
 body {
       margin:0;
       padding:0;
-      font-family: Sans-Serif;
+      font-family: 'Inkika', serif;
       line-height: 1.5em;
     }
 
+    img{
+      max-width: 50%;
+    }
     #container {
       max-width: 1000px;
       margin: auto;
     }
 
-    #header {
-      background: FullSizeRender.jpg;
-      height: 100px;
+    #wrapperHeader{
+        position: relative;;
+        background-image:url(FullSizeRender.jpg);
+    }
+
+    #header{
+        margin: auto;
+        background:url(FullSizeRender.jpg) no-repeat;
+        width:1000px;
+        height:200px;
     }
 
     #header h1 {
@@ -39,7 +49,7 @@ body {
     #footer {
       clear: left;
       width: 100%;
-      background: #ccc;
+      background: black;
       text-align: center;
       padding: 4px 0;
     }
