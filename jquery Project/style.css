@@ -1,0 +1,14 @@
+body{
+  background-image: url(IMG_4071.JPG);
+  background-size: cover;;
+  background-position: center;
+
+  color: #333;
+}
+
+section {
+  width: 150px;
+  height: auto;
+  margin: 100px auto 0;
+  position: relative;
+}
