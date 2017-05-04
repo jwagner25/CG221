@@ -6,7 +6,7 @@ var y = 100;
 var mySound;
 
 function preload() {
-  mySound = loadSound('assets/Axero_feat.Jimmy_Magardeau-WalkAway.mp3');
+  mySound = loadSound('Axero_feat.Jimmy_Magardeau-WalkAway.mp3');
 }
 function setup() {
 createCanvas(600,800);
