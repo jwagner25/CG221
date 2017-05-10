@@ -1,35 +1,27 @@
- var input, button, greeting;
-var mySound;
-
-function preload() {
-  mySound = loadSound('03 Elegy.m4a');
-}
+var input, button, greeting;
 
 function setup() {
 
   // create canvas
   createCanvas(710, 400);
-  background(30);
-  mySound.setVolume(0.1);
-  mySound.play();
 
   input = createInput();
   input.position(20, 65);
 
-  button = createButton('sound');
+  button = createButton('submit');
   button.position(input.x + input.width, 65);
-  button.mousePressed(play);
+  button.mousePressed(greet);
 
-  greeting = createElement('h2', 'What is the song?');
+  greeting = createElement('h2', 'what is your name?');
   greeting.position(20, 5);
 
   textAlign(CENTER);
   textSize(50);
 }
 
-function play() {
+function greet() {
   var name = input.value();
-  play.html('hello '+Hey+'!');
+  greeting.html('hello '+name+'!');
   input.value('');
 
   for (var i=0; i<200; i++) {
@@ -42,5 +34,3 @@ function play() {
   }
 }
 
-function draw(){
-}
