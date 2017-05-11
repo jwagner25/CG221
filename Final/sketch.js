@@ -1,35 +1,44 @@
-var input, button, greeting;
+var yoff = 0.0;        // 2nd dimension of perlin noise
+var mySound;
 
-function setup() {
-
-  // create canvas
-  createCanvas(710, 400);
-
-  input = createInput();
-  input.position(20, 65);
-
-  button = createButton('submit');
-  button.position(input.x + input.width, 65);
-  button.mousePressed(greet);
-
-  greeting = createElement('h2', 'what is your name?');
-  greeting.position(20, 5);
-
-  textAlign(CENTER);
-  textSize(50);
+function preload() {
+  mySound = loadSound('03 Elegy.m4a');
 }
 
-function greet() {
-  var name = input.value();
-  greeting.html('hello '+name+'!');
-  input.value('');
+function setup() {
+  createCanvas(710, 400);
+  mySound.setVolume(0.1);
+  mySound.play();
+}
 
-  for (var i=0; i<200; i++) {
-    push();
-    fill(random(255), 255, 255);
-    translate(random(width), random(height));
-    rotate(random(2*PI));
-    text(name, 0, 0);
-    pop();
+function draw() {
+  background(51);
+
+  fill(255);
+  // We are going to draw a polygon out of the wave points
+  beginShape();
+
+  var xoff = 0;       // Option #1: 2D Noise
+  // var xoff = yoff; // Option #2: 1D Noise
+
+  // Iterate over horizontal pixels
+  for (var x = 0; x <= width; x += 10) {
+    // Calculate a y value according to noise, map to
+
+    // Option #1: 2D Noise
+    var y = map(noise(xoff, yoff), 0, 1, 200,300);
+
+    // Option #2: 1D Noise
+    // var y = map(noise(xoff), 0, 1, 200,300);
+
+    // Set the vertex
+    vertex(x, y);
+    // Increment x dimension for noise
+    xoff += 0.05;
   }
+  // increment y dimension for noise
+  yoff += 0.01;
+  vertex(width, height);
+  vertex(0, height);
+  endShape(CLOSE);
 }
